@@ -1,0 +1,166 @@
+.industrial-classifiers-classes {
+  &__navigation {
+    display: flex;
+    align-items: center;
+    margin: 0 0 35px;
+    
+    @media only screen and (max-width: 767px) {
+			justify-content: space-between;
+		}
+  }
+
+  &__button {
+    min-width: 232px;
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #9A9CB2;
+    border: 1px solid #EEF1FA;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 12px 18px;
+    transition: all 0.2s;
+
+    &.active {
+      background: $accent;
+      box-shadow: 0px 10px 20px rgba(0, 57, 166, 0.2);
+      color: #ffffff;
+    }
+
+    &:not(.active):hover {
+      border: 1px solid $accent;
+      color: $accent;
+    }
+
+    &:first-child {
+      margin: 0 24px 0 0;
+    }
+
+    @media only screen and (max-width: 767px) {
+      min-height: 68px;
+			min-width: auto;
+      width: calc(100% - 12px);
+		}
+
+    @media only screen and (max-width: 767px) {
+      font-size: 14px;
+		}
+  }
+  
+  &__alphabet {
+    margin: 0 0 34px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__alphabet-item {
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #0039A6;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+    
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @media only screen and (max-width: 767px) {
+      margin: 0 12px 12px 0;
+		}
+  }
+
+  &__alphabet-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 12px;
+    column-gap: 24px;
+    margin: 0 0 40px;
+
+    @media only screen and (max-width: 1023px) {
+      grid-template-columns: 1fr 1fr;
+		}
+    
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+		}
+  }
+
+  &__grid-item {
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #151515;
+  }
+
+  &__list-description {
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #151515;
+    margin: 0 0 12px;
+
+    @media only screen and (max-width: 767px) {
+			font-size: 16px;
+		}
+  }
+
+  &__list-inner {
+    display: grid;
+    grid-template-columns: 124px calc(100% - 124px);
+  }
+
+  &__list-number,
+  &__list-text {
+    font-family: PT Root UI;
+    font-weight: 500;
+    color: #151515;
+    padding: 6px 24px 6px 0;
+
+    &--grey {
+      background: #F7F9FF;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      padding: 6px 16px 6px 0;
+		}
+  }
+
+  &__list-number {
+    font-size: 18px;
+    line-height: 130%;
+    color: $accent;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 14px;
+		}
+  }
+
+  &__list-text {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 14px;
+		}
+  }
+
+  .pagintaion {
+    margin: 40px 0 24px;
+
+    @media only screen and (min-width: 768px) {
+      justify-content: flex-start;
+		}
+  }
+}

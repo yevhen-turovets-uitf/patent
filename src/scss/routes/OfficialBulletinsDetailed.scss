@@ -1,0 +1,64 @@
+.official-bulletins-detailed {
+  &__date-select {
+    width: 225px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin: 40px 0 30px;
+
+    @include media-breakpoint-down(md) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media-breakpoint-down(xs) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    margin: 0 0 15px;
+    font-size: 20px;
+    color: $accent;
+    font-weight: 700;
+
+    @media only screen and (max-width: 767px) {
+			font-size: 16px;
+		}
+  }
+
+  &__grid-item {
+    background: #f7f9ff;
+    border-radius: 8px;
+    padding: 15px;
+  }
+
+  &__month {
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #54566C;
+    margin: 0 0 15px;
+  }
+
+  &__link {
+    display: block;
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #0039A6;
+
+    &:not(:last-child) {
+      margin: 0 0 15px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

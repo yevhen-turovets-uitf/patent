@@ -1,0 +1,456 @@
+.search-card {
+  &__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media only screen and (max-width: 767px) {
+			flex-direction: column-reverse;
+		}
+  }
+
+  &__control {
+    display: flex;
+
+    @media only screen and (max-width: 767px) {
+			width: 100%;
+      justify-content: space-between;
+      margin: 0 0 36px;
+		}
+
+    i {
+      color: $accent;
+    }
+
+    .next {
+      margin-left: 15px;
+
+      i {
+        transform: rotate(180deg);
+        margin-left: 10px;
+      }
+    }
+
+    .prew {
+      i {
+        margin-right: 10px;
+      }
+    }
+
+    .next,
+    .prew {
+      display: flex;
+      align-items: center;
+      font-family: PT Root UI;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.16px;
+      color: #CBD3E2;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  .section-title {
+    margin: 0 0 52px;
+
+    @media only screen and (max-width: 1360px) {
+      margin: 0 0 12px;
+    }
+  }
+
+  &__status {
+    margin: 0 0 36px;
+  }
+
+  .side-menu {
+    @media only screen and (max-width: 1360px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and (max-width: 991px) {
+      grid-gap: 16px;
+    }
+  
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__aside-status {
+    background: #F7F9FF;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 0 24px;
+  }
+
+  &__status-title {
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #151515;
+    margin: 0 0 6px;
+  }
+
+  &__subtitle {
+    font-family: PT Root UI;
+    font-size: 12px;
+    line-height: 120%;
+    color: #151515;
+  }
+
+  &__aside-link {
+    display: flex;
+    align-items: center;
+    background: #F7F9FF;
+    border-radius: 10px;
+    padding: 24px 30px 12px;
+    margin: 0 0 24px;
+    color: #54566C;
+    transition: all 0.2s;
+    min-height: 131px;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @media only screen and (max-width: 1360px) {
+      margin: 0;
+    }
+  }
+
+  &__link-image {
+    @media only screen and (max-width: 350px) {
+      display: none;
+    }
+  }
+
+  &__link-text {
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+    margin: -12px 0 0 10px;
+  }
+
+  &__number {
+    margin: 0 8px 0 0;
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #151515;
+    
+    @media only screen and (max-width: 767px) {
+      font-size: 16px;
+      margin: 0 4px 0 0;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 767px) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+
+  &__download-pdf {
+    background: #EEF1FA;
+    border-radius: 8px;
+    padding: 20px 15px;
+    font-family: PT Root UI;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.16px;
+    color: #0039A6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+      margin: 0 0 24px;
+    }
+
+    & > .base-icon-down-2 {
+      color: inherit;
+      font-size: 24px;
+      margin-right: 6px;
+    }
+  }
+
+  &__card-id {
+    margin: 0 0 26px;
+  }
+
+  &__id-value {
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #151515;
+    margin: 0 24px 0 0;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 24px;
+      margin: 0 8px 0 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 26px;
+  }
+
+  &__item-title {
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #151515;
+  }
+
+  &__item-link {
+    display: block;
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #0039A6;
+    transition: all 0.2s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__item-text {
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #151515;
+  }
+
+  &__tabs-container {
+    margin: 0 0 28px;
+  }
+
+  &__tabs {
+    .MuiTabs-indicator {
+      display: none;
+    }
+  }
+
+  &__tabs-item {
+    &.MuiTab-root {
+      font-family: PT Root UI;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 130%;
+      color: #9A9CB2;
+      letter-spacing: normal;
+      text-transform: initial;
+      background: #EEF1FA;
+      border-radius: 8px 8px 0px 0px;
+      margin: 0 4px 0 0;
+      border-left: 1px solid #F7F9FF;
+      border-top: 1px solid #F7F9FF;
+      border-right: 1px solid #F7F9FF;
+      opacity: 1;
+    }
+
+    &.Mui-selected {
+      color: #0039A6;
+      background: white;
+    }
+  }
+
+  &__tabs-content-item {
+    padding: 0 20px;
+    color: #151515;
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  &__applications {
+    margin: 0 0 30px;
+  }
+
+  &__applications-title {
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 130%;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #0039A6;
+  }
+
+  &__applications-item {
+    margin: 10px 0 0;
+    padding: 20px;
+    border-bottom: 1px solid #EEF1FA;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__applications-main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 15px;
+
+    @media only screen and (max-width: 767px) {
+     flex-direction: column;
+     align-items: flex-start;
+    }
+  }
+
+  &__applications-number {
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #0039A6;
+    margin: 0 20px 0 0;
+
+    @media only screen and (max-width: 767px) {
+      margin: 0 0 6px;
+    }
+  }
+
+  &__applications-date {
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #808285;
+    margin: 0 45px 0 0;
+    opacity: 0.5;
+
+    @media only screen and (max-width: 767px) {
+      margin: 0 0 6px;
+    }
+  }
+
+  &__applications-status {
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.32px;
+    color: #808285;
+    background: #EEF1FA;
+    border-radius: 18px;
+    padding: 5px 35px;
+  }
+
+  &__applications-item-title {
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    color: #151515;
+    margin: 0 0 10px;
+  }
+
+  &__applications-item-text {
+    font-family: TT Wellingtons;
+    font-size: 14px;
+    line-height: 130%;
+    color: #808285;
+  }
+
+  .events {
+    position: absolute;
+    top: 28px;
+    right: 18px;
+
+    i {
+      display: block;
+      color: $accent;
+      font-size: 15.5px;
+      width: 1em;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .bl {
+      @extend %transition;
+      @extend %hide;
+      position: absolute;
+      top: -12px;
+      right: -14px;
+      box-shadow: 0px 8px 16px rgba(0, 57, 166, 0.15);
+      border-radius: 4px;
+      background: #ffffff;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #54566c;
+      min-width: 162px;
+      overflow: hidden;
+      z-index: 3;
+
+      a {
+        display: block;
+        padding: 6px 15px;
+        color: inherit;
+
+        &:hover {
+          background: #cbd3e2;
+        }
+      }
+    }
+
+    &:hover {
+      .bl {
+        @extend %show;
+      }
+    }
+  }
+
+  &__drawer-inner {
+    padding: 32px;
+  }
+
+  &__drawer-button {
+		font-family: $default-font;
+		cursor: pointer;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 18px;
+		letter-spacing: 0.16px;
+		color: #808285;
+		padding: 12px 0;
+
+		&:hover {
+			background: #EEF1FA;
+		}
+	}
+}

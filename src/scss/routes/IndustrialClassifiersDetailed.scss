@@ -1,0 +1,22 @@
+.industrial-classifiers-detailed {
+  &__list {
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #151515;
+    margin: 0 0 12px;
+  }
+
+  &__list-title {
+    margin: 0 0 0 -40px;
+  }
+
+  &__list-item {
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #151515;
+  }
+}

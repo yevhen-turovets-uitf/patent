@@ -1,0 +1,52 @@
+.account-popup {
+  .inner-wrap {
+    text-align: center;
+    width: 100%;
+    max-width: 305px;
+    padding: 25px 25px 35px;
+
+    .icon {
+      font-size: 57px;
+      color: $accent;
+      margin-bottom: 27px;
+    }
+
+    .name {
+      line-height: lh(23, 18);
+    }
+
+    .subject-status {
+      font-size: 14px;
+      color: #808285;
+      margin-bottom: 25px;
+    }
+
+    .profile-link {
+      display: block;
+      font-family: TT Wellingtons;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 130%;
+      margin-bottom: 36px;
+    }
+
+    .button-style1 {
+      min-width: 125px;
+      color: #808285;
+    }
+  }
+
+  .custom-select {
+    .custom-select__menu {
+      position: fixed;
+      width: 406px;
+      top: inherit;
+      left: inherit;
+      right: inherit;
+
+      @include media-breakpoint-down(xs) {
+        width: 272px;
+      }
+    }
+  }
+}

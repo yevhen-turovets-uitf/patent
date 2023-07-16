@@ -1,0 +1,40 @@
+.product-classifiers-classes {
+  &__item {
+    display: block;
+    margin: 0 0 24px;
+
+    &:hover > div {
+      color: $accent;
+    }
+  }
+
+  &__title {
+    margin: 0 0 12px;
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #151515;
+  }
+
+  &__text {
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #151515;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 16px;
+		}
+  }
+
+  .pagintaion {
+    margin: 40px 0 24px;
+
+    @media only screen and (min-width: 768px) {
+      justify-content: flex-start;
+		}
+  }
+}

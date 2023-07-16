@@ -1,0 +1,51 @@
+.open-api {
+  &__aside {
+		flex-grow: 10;
+	}
+
+	&__container {
+		display: flex;
+		align-items: flex-start;
+
+		@media only screen and (max-width: 1360px) {
+			display: block;
+		}
+	}
+
+  &__item {
+    margin: 0 0 50px;
+  }
+
+  &__title {
+    margin: 0 0 15px;
+    font-size: 20px;
+    color: $accent;
+    font-weight: 700;
+
+    @media only screen and (max-width: 767px) {
+			font-size: 16px;
+		}
+  }
+
+  &__download {
+    width: fit-content;
+    margin-top: -3px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #54566c;
+    line-height: 1;
+    cursor: pointer;
+
+    &:hover {
+      color: $accent;
+    }
+
+    & > .base-icon-down-2 {
+      color: inherit;
+      font-size: 24px;
+      margin-right: 6px;
+    }
+  }
+}

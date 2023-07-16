@@ -1,0 +1,312 @@
+.objects {
+  min-height: calc(100vh - 70px - 140px);
+
+  &__filters-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 36px 0;
+
+    @media only screen and (max-width: 991px) {
+      flex-direction: column;
+      align-items: flex-start;
+		}
+  }
+
+  &__filters-input {
+    width: 600px;
+
+    @media only screen and (max-width: 991px) {
+      width: 100%;
+		}
+
+    @media only screen and (max-width: 767px) {
+			input {
+				height: 56px;
+			}
+		}
+  }
+
+  &__filters-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 991px) {
+      margin: 24px 0 0;
+      flex-direction: column;
+      align-items: flex-start;
+		}
+  }
+
+  &__sort-button,
+  &__filter-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: PT Root UI;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.16px;
+    color: #808285;
+    margin: 0 0 0 24px;
+    cursor: pointer;
+
+    &:hover {
+      color: $accent;
+    }
+
+    & > img {
+      width: 18px;
+      margin: 0 8px 0 0;
+    }
+
+    @media only screen and (max-width: 991px) {
+      margin: 0;
+		}
+  }
+
+  &__filter-button {
+    @media only screen and (max-width: 991px) {
+      margin: 24px 0 0;
+		}
+  }
+
+  &__inner-filters-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 36px 0;
+
+    @media only screen and (max-width: 991px) {
+      flex-direction: column;
+      align-items: flex-start;
+		}
+  }
+
+  &__inner-filters-fields {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+      flex-direction: column;
+		}
+  }
+
+  &__object-type-select {
+    width: 450px;
+    margin: 0 42px 0 0;
+
+    @media only screen and (max-width: 1400px) {
+      width: 350px;
+      margin: 0 12px 0 0;
+		}
+
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+      margin: 0;
+		}
+  }
+
+  &__object-period-select {
+    width: 224px;
+
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+      margin: 24px 0 0;
+		}
+  }
+
+  &__inner-filters-buttons {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 991px) {
+      margin: 24px 0 0;
+		}
+  }
+
+  &__search-button,
+  &__hidden-button {
+    font-family: PT Root UI;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.16px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+    height: 56px;
+    padding: 0 28px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin: 0 0 0 12px;
+
+    @media only screen and (max-width: 991px) {
+      margin: 0;
+		}
+  }
+
+  &__search-button {
+    background: $accent;
+    color: #FFFFFF;
+    box-sizing: border-box;
+
+    &:hover {
+      background: none;
+      color: $accent;
+      border: 1px solid $accent;
+    }
+
+    @media only screen and (max-width: 991px) {
+      margin: 0 12px 0 0;
+		}
+  }
+
+  &__hidden-button {
+    color: $accent;
+
+    &:hover {
+      border: 1px solid $accent;
+    }
+  }
+
+  &__item {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		border-bottom: 1px solid #EEF1FA;
+		padding: 26px 12px;
+	}
+
+  &__item-content {
+		cursor: pointer;
+    width: calc(100% - 24px);
+
+		&:hover {
+			.objects__item-title {
+				color: $accent;
+				text-decoration: underline;
+			}
+		}
+  }
+
+  &__item-top-data {
+		display: flex;
+		align-items: center;
+		margin: 0 0 12px;
+
+		@media only screen and (max-width: 767px) {
+      flex-direction: column;
+			align-items: flex-start;
+		}
+  }
+
+  &__item-number {
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #0039A6;
+		margin: 0 24px 0 0;
+
+		@media only screen and (max-width: 767px) {
+      margin: 0 0 10px;
+		}
+  }
+
+  &__item-date {
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #808285;
+    opacity: 0.5;
+    margin: 0 24px 0 0;
+
+    @media only screen and (max-width: 767px) {
+      margin: 0 0 10px;
+		}
+  }
+
+  &__item-type {
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #151515;
+    opacity: 0.5;
+
+    @media only screen and (max-width: 767px) {
+      margin: 0 0 10px;
+		}
+  }
+
+  &__item-title {
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    color: #151515;
+
+    @media only screen and (max-width: 767px) {
+			font-size: 16px;
+		}
+  }
+
+  &__drawer-inner {
+    padding: 32px;
+  }
+
+  &__drawer-button {
+		font-family: $default-font;
+		cursor: pointer;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 18px;
+		letter-spacing: 0.16px;
+		color: #808285;
+		padding: 12px 0;
+
+		&:hover {
+			background: #EEF1FA;
+		}
+  }
+  
+  &__tooltip-button {
+    cursor: pointer;
+		color: #54566C;
+		border: none;
+		background: none;
+		display: block;
+		width: 100%;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 20px;
+		padding: 6px 15px;
+		text-align: left;
+
+		&:hover {
+			background: #EEF1FA;
+		}
+  }
+
+  &__tooltip-trigger {
+    position: relative;
+    display: block;
+    color: $accent;
+    font-size: 15.5px;
+    width: 24px;
+    cursor: pointer;
+		text-align: center;
+  }
+}

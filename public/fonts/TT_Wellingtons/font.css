@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'TT Wellingtons';
+  src: url('TTWellingtons-Regular.eot');
+  src: local('TT Wellingtons Regular'), local('TTWellingtons-Regular'),
+    url('TTWellingtons-Regular.eot?#iefix') format('embedded-opentype'),
+    url('TTWellingtons-Regular.woff2') format('woff2'),
+    url('TTWellingtons-Regular.woff') format('woff'),
+    url('TTWellingtons-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Wellingtons';
+  src: url('TTWellingtons-Bold.eot');
+  src: local('TT Wellingtons Bold'), local('TTWellingtons-Bold'),
+    url('TTWellingtons-Bold.eot?#iefix') format('embedded-opentype'),
+    url('TTWellingtons-Bold.woff2') format('woff2'),
+    url('TTWellingtons-Bold.woff') format('woff'),
+    url('TTWellingtons-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

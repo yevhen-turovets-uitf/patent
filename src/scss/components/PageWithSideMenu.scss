@@ -1,0 +1,20 @@
+.page-with-side-menu {
+  position: relative;
+
+  &__aside {
+    flex-grow: 10;
+  }
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+
+    @media only screen and (max-width: 1360px) {
+      display: block;
+    }
+
+    @media only screen and (min-width: 768px) {
+      min-height: calc(100vh - 70px);
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.search-template-modal {
+	.MuiBackdrop-root {
+		background: rgba(255, 255, 255, 0.8);
+	}
+
+	.MuiDialog-paper {
+		margin: 0;
+	}
+
+	&__inner {
+		width: 450px;
+		padding: 30px 20px;
+	
+		@media only screen and (max-width: 767px) {
+			width: 320px;
+		}
+
+		@media only screen and (max-width: 359px) {
+			width: 300px;
+		}
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 16px;
+		margin-bottom: 15px;
+		font-family: $tt;
+	}
+
+	&__input {
+		margin-bottom: 32px;
+
+		input {
+			height: 56px;
+		}
+	}
+
+	&__save {
+		width: 100%;
+		align-items: center;
+		background: $accent;
+		border-radius: 8px;
+		height: 56px;
+		color: #fff;
+		border: 1px solid transparent;
+		cursor: pointer;
+		font-weight: 700;
+		margin: 0 0 15px;
+
+		&:hover {
+			background: #fff;
+			color: $accent;
+			border: 1px solid $accent;
+		}
+	}
+
+	&__cancel {
+		width: 100%;
+		background: #eef1fa;
+		border-radius: 8px;
+		border: none;
+		display: flex;
+		align-items: center;
+		border-radius: 8px;
+		justify-content: center;
+		height: 56px;
+		color: $accent;
+		font-weight: 700;
+
+		&:hover {
+			background: $accent;
+			color: #fff;
+		}
+	}
+}

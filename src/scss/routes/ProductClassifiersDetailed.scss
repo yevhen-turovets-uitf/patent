@@ -1,0 +1,85 @@
+.product-classifiers-detailed {
+  &__list-inner {
+    margin: 0 0 36px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+
+    @media only screen and (max-width: 767px) {
+      display: block;
+		}
+  }
+
+  &__list-title {
+    font-family: PT Root UI;
+    font-size: 12px;
+    line-height: 120%;
+    color: #54566C;
+    padding: 12px 24px 12px 0;
+
+    @media only screen and (max-width: 767px) {
+      padding: 6px 16px 6px 0;
+		}
+  }
+  
+  &__description {
+    margin: 0 0 24px;
+  }
+
+  &__description-item {
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 16px;
+		}
+  }
+
+  &__list-number,
+  &__list-text {
+    font-family: PT Root UI;
+    font-weight: 500;
+    color: #151515;
+    padding: 6px 24px 6px 0;
+
+    &--grey {
+      background: #F7F9FF;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      padding: 6px 16px 6px 0;
+		}
+
+    @media only screen and (max-width: 767px) {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+		}
+  }
+
+  &__list-number {
+    font-size: 18px;
+    line-height: 130%;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 14px;
+		}
+  }
+
+  &__list-text {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 14px;
+		}
+  }
+
+  .pagintaion {
+    margin: 40px 0 24px;
+
+    @media only screen and (min-width: 768px) {
+      justify-content: flex-start;
+		}
+  }
+}

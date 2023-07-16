@@ -1,0 +1,75 @@
+.product-classifiers-documents {
+  &__link-wrapper {
+    margin: 0 0 12px;
+
+    &:last-child {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__link {
+    font-family: PT Root UI;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: $accent;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @media only screen and (max-width: 767px) {
+      font-size: 16px;
+		}
+  }
+
+  &__weight {
+    font-family: PT Root UI;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #151515;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 16px;
+		}
+  }
+
+  &__description {
+    margin: 0 0 20px;
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #151515;
+  }
+
+  &__all-files {
+    width: fit-content;
+    margin-top: -3px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: $accent;
+    line-height: 1;
+    cursor: pointer;
+    font-family: PT Root UI;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.16px;
+    transition: all 0.4s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    & > .base-icon-down-2 {
+      color: inherit;
+      font-size: 24px;
+      margin-right: 6px;
+    }
+  }
+}

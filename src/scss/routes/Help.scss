@@ -1,0 +1,113 @@
+.help-page {
+  &__download-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #e7efff;
+    border-radius: 8px;
+    min-height: 135px;
+    padding: 15px 15px 15px 30px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: lh(23, 18);
+    font-family: "TT Wellingtons";
+    transition: all 400ms ease-in-out;
+    z-index: 2;
+    margin-bottom: 12px;
+    font-size: 27px;
+    background: #fff;
+    overflow: hidden;
+
+    &:hover {
+      border-color: transparent;
+      box-shadow: 0px 10px 22px rgba(44, 116, 255, 0.15);
+    }
+
+    &:before {
+      @extend %hide;
+      content: "";
+      position: absolute;
+      top: 13px;
+      right: 13px;
+      bottom: 13px;
+      background: #fff url(/images/bg.svg) 50% no-repeat;
+      background-size: contain;
+      width: 169px;
+      transform: translateX(30%);
+      transition: all 400ms ease-in-out;
+      z-index: -1;
+  
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      &:before {
+        @extend %show;
+        transform: translateX(0%);
+      }
+    }
+  
+    @include media-breakpoint-down(sm) {
+      min-height: 75px;
+      font-size: 16px;
+      padding: 15px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
+  }
+
+  &__icon {
+    @extend %flex;
+    position: relative;
+    color: $accent;
+    font-size: 32px;
+    margin-right: 36px;
+    flex: 0 0 50px;
+    max-width: 50px;
+    height: 60px;
+    z-index: 1;
+
+    &:before {
+      margin-top: -5px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: -16px;
+      width: 82px;
+      height: 92px;
+      background: url(/images/shield3.svg);
+      background-size: contain;
+      z-index: -1;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+      flex: 0 0 32px;
+      max-width: 32px;
+      height: 38px;
+
+      &:after {
+        top: -6px;
+        left: -11px;
+        width: 54px;
+        height: 61px;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 18px;
+    }
+  }
+
+  &__title {
+    max-width: 630px;
+  }
+}

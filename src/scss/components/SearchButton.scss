@@ -1,0 +1,39 @@
+.search-button {
+  display: flex;
+  align-items: center;
+  background: #0039a6;
+  border-radius: 8px;
+  justify-content: center;
+  height: 56px;
+  color: #fff;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    background: #fff;
+    color: $accent;
+    border: 1px solid $accent;
+
+    svg {
+      path {
+        transition: 300ms;
+        fill: $accent;
+      }
+    }
+  }
+
+  span {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 5px;
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    path {
+      transition: 300ms;
+    }
+  }
+}

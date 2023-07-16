@@ -1,0 +1,106 @@
+.open-registers {
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr 1.8fr;
+
+    @media only screen and (max-width: 768px) {
+			grid-template-columns: 1fr;
+		}
+  }
+
+  &__grid-head,
+  &__sub-head {
+    padding: 20px 0 20px 20px;
+    color: #9a9cb2;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    font-family: TT Wellingtons;
+
+    @media only screen and (max-width: 768px) {
+			border-top: none;
+      font-size: 14px;
+      padding: 0 0 5px;
+		}
+  }
+
+  &__grid-title {
+    padding: 20px 0;
+    border-top: 1px solid #EEF1FA;
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #151515;
+
+    @media only screen and (max-width: 768px) {
+			border-top: none;
+      font-size: 14px;
+      padding: 20px 0 15px;
+		}
+  }
+
+  &__grid-object {
+    padding: 20px 0 20px 20px;
+    border-top: 1px solid #EEF1FA;
+
+    @media only screen and (max-width: 768px) {
+			border-top: none;
+      padding: 0 0 20px;
+		}
+  }
+
+  &__grid-statement {
+    padding: 20px 0 20px 20px;
+    border-top: 1px solid #EEF1FA;
+
+    @media only screen and (max-width: 768px) {
+			border-top: none;
+      border-bottom: 1px solid #EEF1FA;
+      padding: 0 0 20px;
+		}
+  }
+
+  &__link-wrapper {
+    &:not(:last-child) {
+      margin: 0 0 30px;
+    }
+
+    @media only screen and (max-width: 768px) {
+			&:not(:last-child) {
+        margin: 0 0 20px;
+      }
+		}
+  }
+
+  &__link-row {
+    padding: 20px 0;
+    border-top: 1px solid #EEF1FA;
+
+    @media only screen and (max-width: 768px) {
+			border-top: none;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #EEF1FA;
+      }
+		}
+  }
+
+  &__link {
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #0039A6;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @media only screen and (max-width: 768px) {
+			font-size: 14px;
+		}
+  }
+}

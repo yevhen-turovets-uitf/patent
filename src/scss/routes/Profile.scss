@@ -1,0 +1,66 @@
+.profile {
+  &__content {
+    position: relative;
+    padding: 12px 0 0 78px;
+    margin: 0 0 55px;
+
+    @media only screen and (max-width: 767px) {
+      padding-left: 0;
+    }
+  }
+
+  &__avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    background-color: #f6f7ff;
+    border-radius: 50%;
+    font-size: 28px;
+    color: #54566c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 767px) {
+      position: relative;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.31818;
+    font-family: "TT Wellingtons";
+
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+
+  &__details {
+    color: #0039a6;
+    font-feature-settings: "tnum" on, "lnum" on;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.31818;
+    font-family: "TT Wellingtons";
+
+    &:not(:last-child) {
+      margin: 0 0 30px;
+    }
+
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+  }
+  
+  &__element {
+    margin: 0 12px 0 0;
+  }
+}

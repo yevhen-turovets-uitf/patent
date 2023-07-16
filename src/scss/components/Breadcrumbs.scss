@@ -1,0 +1,28 @@
+.breadcrumbs {
+  display: flex;
+  font-size: 14px;
+  line-height: 100%;
+  color: #808285;
+  margin-bottom: 32px;
+
+  .wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  a {
+    @extend %a-reset;
+    text-decoration: underline;
+    color: $accent;
+    padding: 5px 0;
+  }
+
+  span {
+    padding: 5px 0;
+
+    &.sep {
+      margin: 0 5px;
+    }
+  }
+}

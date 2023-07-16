@@ -1,0 +1,188 @@
+.patent-attorneys {
+  .page-with-side-menu__aside {
+    max-width: 1090px;
+	}
+
+  &__fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'first first first second second second'
+      'third third third fourth fourth fourth'
+      'fifth fifth fifth sixth sixth seventh';
+    grid-gap: 20px;
+    align-items: flex-end;
+    margin: 0 0 20px;
+
+    .input-row {
+      margin-bottom: 0;
+    }
+
+    @media only screen and (max-width: 991px) {
+      grid-template-areas:
+      'first first first second second second'
+      'third third third fourth fourth fourth'
+      'fifth fifth fifth fifth fifth fifth'
+      'sixth sixth sixth sixth seventh seventh';
+		}
+
+		@media only screen and (max-width: 767px) {
+			grid-template-columns: 1fr;
+      grid-template-areas:
+      'first'
+      'second'
+      'third'
+      'fourth'
+      'fifth'
+      'sixth'
+      'seventh';
+		}
+  }
+
+  &__fields-item {
+    &--first {
+      grid-area: first;
+    }
+
+    &--second {
+      grid-area: second;
+    }
+
+    &--third {
+      grid-area: third;
+    }
+
+    &--fourth {
+      grid-area: fourth;
+    }
+
+    &--fifth {
+      grid-area: fifth;
+    }
+
+    &--sixth {
+      grid-area: sixth;
+    }
+
+    &--seventh {
+      grid-area: seventh;
+    }
+
+    @media only screen and (max-width: 767px) {
+			input {
+				height: 56px;
+			}
+		}
+  }
+
+  &__description {
+    max-width: 720px;
+  }
+  
+  &__text {
+    color: #151515;
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 16px;
+		}
+  }
+
+  &__empty-title {
+    margin: 0 0 10px;
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #0039A6;
+    opacity: 0.5;
+  }
+
+  &__empty-subtitle {
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #0039A6;
+    opacity: 0.5;
+  }
+
+  &__control {
+    display: flex;
+    margin: 0 0 35px;
+
+    @media only screen and (max-width: 767px) {
+      display: block;
+      margin: 0 0 20px;
+		}
+  }
+
+  &__control-item {
+    display: flex;
+    align-items: center;
+    margin-right: 27px;
+    cursor: pointer;
+    position: relative;
+    -webkit-touch-callout: none;
+    user-select: none;
+
+    & > img {
+      flex-shrink: 0;
+      margin-right: 7px;
+    }
+
+    & > span {
+      font-size: 16px;
+      display: block;
+      font-weight: 700;
+      color: #0039a6;
+    }
+
+    @media only screen and (max-width: 767px) {
+      margin: 0 0 20px;
+      font-size: 14px;
+      line-height: 18px;
+		}
+  }
+
+  &__result {
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #54566C;
+    margin: 0 0 20px;
+
+    @media only screen and (max-width: 767px) {
+      margin: 40px 0 20px;
+		}
+  }
+
+  &__dropdown-row {
+    font-family: PT Root UI;
+    font-size: 18px;
+    line-height: 130%;
+    color: #54566C;
+    margin: 0 0 4px;
+  }
+
+  .pagintaion {
+    margin: 40px 0 24px;
+
+    @media only screen and (min-width: 768px) {
+      justify-content: flex-start;
+		}
+  }
+
+  .pagintaion {
+    margin: 40px 0 24px;
+
+    @media only screen and (min-width: 768px) {
+      justify-content: flex-start;
+		}
+  }
+}

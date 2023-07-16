@@ -1,0 +1,188 @@
+.industrial-classifiers {
+  &__fields {
+    display: grid;
+    grid-template-columns: 225px 655px 165px;
+    grid-gap: 20px;
+    align-items: flex-end;
+    margin: 0 0 20px;
+
+    .input-row {
+      margin-bottom: 0;
+    }
+
+    @media only screen and (max-width: 1199px) {
+			grid-template-columns: 225px 505px 165px;
+		}
+
+    @media only screen and (max-width: 991px) {
+      grid-template-columns: 1fr;
+			margin-bottom: 18px;
+		}
+  }
+
+  &__fields-item {
+    @media only screen and (max-width: 767px) {
+			input {
+				height: 56px;
+			}
+		}
+  }
+
+  &__control {
+    display: flex;
+    margin: 0 0 35px;
+
+    @media only screen and (max-width: 767px) {
+      display: block;
+      margin: 0 0 20px;
+		}
+  }
+
+  &__control-item {
+    display: flex;
+    align-items: center;
+    margin-right: 27px;
+    cursor: pointer;
+    position: relative;
+    -webkit-touch-callout: none;
+    user-select: none;
+
+    & > img {
+      flex-shrink: 0;
+      margin-right: 7px;
+    }
+
+    & > span {
+      font-size: 16px;
+      display: block;
+      font-weight: 700;
+      color: #0039a6;
+    }
+
+    @media only screen and (max-width: 767px) {
+      margin: 0 0 20px;
+      font-size: 14px;
+      line-height: 18px;
+		}
+  }
+
+  &__description {
+    max-width: 905px;
+  }
+
+  &__title {
+    color: #151515;
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    margin: 0 0 10px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 14px;
+		}
+  }
+
+  &__subtitle {
+    margin: 0 0 24px;
+    color: #151515;
+    font-family: PT Root UI;
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  &__text {
+    white-space: pre-line;
+    color: #151515;
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 16px;
+		}
+  }
+
+  &__empty-title {
+    margin: 0 0 10px;
+    font-family: TT Wellingtons;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #0039A6;
+    opacity: 0.5;
+  }
+
+  &__empty-subtitle {
+    font-family: PT Root UI;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #0039A6;
+    opacity: 0.5;
+  }
+
+  &__list-inner {
+    display: grid;
+    grid-template-columns: 124px calc(100% - 124px);
+    margin: 0 0 40px;
+  }
+
+  &__list-title {
+    font-family: PT Root UI;
+    font-size: 12px;
+    line-height: 120%;
+    color: #54566C;
+    padding: 12px 24px 12px 0;
+
+    @media only screen and (max-width: 767px) {
+      padding: 6px 16px 6px 0;
+		}
+  }
+
+  &__list-number,
+  &__list-text {
+    font-family: PT Root UI;
+    font-weight: 500;
+    color: #151515;
+    padding: 6px 24px 6px 0;
+
+    &--grey {
+      background: #F7F9FF;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      padding: 6px 16px 6px 0;
+		}
+  }
+
+  &__list-number {
+    font-size: 18px;
+    line-height: 130%;
+    color: $accent;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 14px;
+		}
+  }
+
+  &__list-text {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 14px;
+		}
+  }
+
+  .pagintaion {
+    margin: 40px 0 24px;
+
+    @media only screen and (min-width: 768px) {
+      justify-content: flex-start;
+		}
+  }
+}
